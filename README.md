@@ -14,7 +14,7 @@ Apache Zeppelin - Kubernetes
      `service/zeppelin-server created` \
      `serviceaccount/zeppelin-server created` \
      `role.rbac.authorization.k8s.io/zeppelin-server-role created` \
-     `rolebinding.rbac.authorization.k8s.io/zeppelin-server-role-binding created` \
+     `rolebinding.rbac.authorization.k8s.io/zeppelin-server-role-binding created` 
 - Verifiy the Deployment `kubectl get pods,svc -n zeppelin`
      >>Expected Output \
      `NAME                                   READY   STATUS    RESTARTS   AGE` \
@@ -22,6 +22,6 @@ Apache Zeppelin - Kubernetes
      `NAME                      TYPE           CLUSTER-IP   EXTERNAL-IP      PORT(S)                        AGE` \
      `service/zeppelin-server   LoadBalancer   #.#.#.#      #.#.#.#          80:30396/TCP,12320:31696/TCP   31h `
 - Access your zeppelin using `service/zeppelin-server` External-IP on port 80 
-    >>Expected Output \ 
+     >>Expected Output \
     `Replace #.#.#.# with real IP (http://#.#.#.#)`
 - Happy Learning! :) 
